@@ -1,0 +1,56 @@
+/* The Signal Index: fashion editorial rhythm, black and white chapters, acid signal accents, and active project chapters instead of card galleries. */
+import { useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, Github, Linkedin, Mail, Menu, Moon, Sun, X } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
+
+const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+const monogram = publicAsset("imane-monogram.png");
+const cvUrl = publicAsset("Imane_Taghzout_CV_FR_EN.pdf");
+
+const chapters = [
+  { id: "geocara", number: "01", title: "GEOCARA", employer: "Generovo", role: "Full Stack AI Engineer Intern", date: "Feb 2026 to Jun 2026", thesis: "A content intelligence platform that helps brands become more visible in AI answer engines.", metric: "6 GEO metrics", metricText: "scored from 0 to 100 across 50 page crawls", tools: "Puppeteer · Cheerio · Zod · React · TypeScript", detail: "Contributed to the audit to brief to writing to fact checking to publication workflow, including the LLM content pipeline, structured outputs, Answer First citation method, AI fact checking, visibility tracking, and responsive frontend." },
+  { id: "rag", number: "02", title: "ENTERPRISE RAG", employer: "Segula Technologies", role: "AI and Data Engineer Intern", date: "Feb 2025 to Jul 2025", thesis: "A retrieval system that cut the distance between a technical question and its answer.", metric: "0.61 → 0.81", metricText: "Recall at 5 on a 100 question benchmark", tools: "SentenceTransformers · Qdrant · BM25 · FastAPI · Docker", detail: "Scoped, built, benchmarked, and deployed a multimodal enterprise RAG chatbot over thousands of internal documentation pages. Average search time moved from approximately five minutes to approximately twenty seconds." },
+  { id: "ocr", number: "03", title: "DOCUMENT INTELLIGENCE", employer: "Barid Al Maghrib", role: "Data Science and AI Intern", date: "Mar 2024 to Jul 2024", thesis: "A document workflow that made structured extraction faster and manual review smaller.", metric: "+30% / −40%", metricText: "throughput increase / manual review reduction", tools: "Python · OpenCV · Tesseract · NLP", detail: "Designed and deployed an OCR based processing pipeline and internal web application, improving extraction through layout aware preprocessing and custom post OCR rules." },
+];
+
+const history = [
+  ["2026", "Generovo", "Full Stack AI Engineer Intern"],
+  ["2025", "Segula Technologies", "AI and Data Engineer Intern"],
+  ["2024", "Barid Al Maghrib", "Data Science and AI Intern"],
+  ["2022", "Ministry of Energy and Mines", "Systems and Network Administration Intern"],
+];
+
+function go(id: string) { document.getElementById(id)?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" }); }
+
+export default function Home() {
+  const { theme, toggleTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [chapter, setChapter] = useState(0);
+  const [active, setActive] = useState("home");
+  useEffect(() => { const ids = ["home", "focus", "work", "history", "about", "contact"]; const onScroll = () => { const marker = window.scrollY + 150; let current = "home"; ids.forEach((id) => { const item = document.getElementById(id); if (item && item.offsetTop <= marker) current = id; }); setActive(current); }; onScroll(); window.addEventListener("scroll", onScroll, { passive: true }); return () => window.removeEventListener("scroll", onScroll); }, []);
+  const navigate = (id: string) => { setMenuOpen(false); go(id); };
+  const current = chapters[chapter];
+  const changeChapter = (direction: number) => setChapter((value) => (value + direction + chapters.length) % chapters.length);
+
+  return <div className="index-page">
+    <header className="index-header"><a className="index-brand" href="#home" onClick={(event) => { event.preventDefault(); navigate("home"); }}><span className="index-mark"><img src={monogram} alt="" /></span><span><strong>IMANE TAGHZOUT</strong><small>DATA SCIENTIST / AI ENGINEER</small></span></a><nav className={menuOpen ? "index-nav is-open" : "index-nav"}>{[["focus", "Focus"], ["work", "Work"], ["history", "History"], ["about", "About"]].map(([id, label]) => <button key={id} className={active === id ? "is-active" : ""} onClick={() => navigate(id)}>{label}</button>)}<a href={cvUrl} target="_blank" rel="noreferrer">CV <span>PDF</span></a><button className="index-theme" onClick={toggleTheme} aria-label="Change theme">{theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}</button><button className="index-talk" onClick={() => navigate("contact")}>Let’s talk <ArrowUpRight size={14} /></button></nav><button className="index-menu" onClick={() => setMenuOpen((value) => !value)} aria-label={menuOpen ? "Close menu" : "Open menu"}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button></header>
+
+    <main>
+      <section id="home" className="index-hero"><div className="hero-index-number">INDEX<br /><strong>01—06</strong></div><div className="hero-block"><p className="index-label">IMANE TAGHZOUT / CASABLANCA</p><h1>I make difficult information easier to <em>search, evaluate, and use.</em></h1><p className="hero-summary">Data Scientist and AI Engineer building production LLM systems, retrieval pipelines, analytics products, and interfaces for applied intelligence.</p><div className="hero-cta"><button className="acid-button" onClick={() => navigate("work")}>Open the work <ArrowRight size={16} /></button><button className="underline-button" onClick={() => navigate("contact")}>Start a conversation <ArrowUpRight size={15} /></button></div></div><div className="hero-seal" aria-hidden="true">印<span>IT</span></div><div className="hero-side"><div className="side-caption">CURRENTLY OPEN TO</div><strong>Data Scientist<br />Data Analyst<br />ML Engineer</strong><span>Applied AI · consulting · financial services · LLM products</span></div></section>
+
+      <section id="focus" className="focus-section"><div className="section-number">02</div><div className="focus-heading"><p className="index-label">WHAT I WORK ON</p><h2>Three ways to<br /><em>make information useful.</em></h2></div><div className="focus-list"><article><span>01</span><strong>Search</strong><p>Retrieval, RAG, embeddings, reranking, and evaluation for information that needs to be found quickly.</p></article><article><span>02</span><strong>Understand</strong><p>OCR, NLP, structured extraction, and fact checking for documents that need to become usable data.</p></article><article><span>03</span><strong>Decide</strong><p>Forecasting, analytics, Power BI, and statistical thinking for teams that need a clearer next move.</p></article></div></section>
+
+      <section id="work" className="chapters-section"><div className="chapters-top"><p className="index-label">03 / SELECTED WORK</p><span>One chapter at a time</span></div><div className="chapters-layout"><aside className="chapter-list" aria-label="Project chapters">{chapters.map((item, index) => <button key={item.id} className={chapter === index ? "is-active" : ""} onClick={() => setChapter(index)}><span>{item.number}</span><strong>{item.title}</strong><small>{item.employer}</small></button>)}<div className="lab-note"><span>LAB NOTES</span><p>CPU forecasting<br />Real estate analytics<br />Gold prediction<br />Power BI sales intelligence</p></div></aside><article className="chapter-view"><div className="chapter-visual"><span className="visual-top">CHAPTER {current.number} / {current.employer.toUpperCase()}</span><span className="chapter-seal" aria-hidden="true">印</span><span className="visual-word">{current.id === "geocara" ? "GEO" : current.id === "rag" ? "RAG" : "OCR"}</span><div className="visual-grid" /><span className="visual-bottom">IM / SYSTEM STUDY</span></div><div className="chapter-copy"><p className="index-label">{current.role} · {current.date}</p><h2>{current.thesis}</h2><p>{current.detail}</p><div className="chapter-evidence"><div><span>MEASURED OUTCOME</span><strong>{current.metric}</strong><small>{current.metricText}</small></div><div><span>STACK</span><strong className="stack-text">{current.tools}</strong></div></div><div className="chapter-controls"><button onClick={() => changeChapter(-1)} aria-label="Previous project"><ArrowLeft size={16} /> Previous</button><span>{current.number} / 03</span><button onClick={() => changeChapter(1)} aria-label="Next project">Next <ArrowRight size={16} /></button></div></div></article></div></section>
+
+      <section className="proof-section"><div className="section-number">04</div><div><p className="index-label">PROOF OF WORK</p><h2>Evidence from<br /><em>the work.</em></h2></div><div className="proof-rows"><div><strong>0.61 → 0.81</strong><span>Segula / Recall at 5 / 100 question benchmark</span></div><div><strong>5 min → 20 sec</strong><span>Segula / average documentation search time</span></div><div><strong>+30%</strong><span>Barid Al Maghrib / document throughput</span></div><div><strong>22%</strong><span>Independent project / gold prediction RMSE improvement</span></div></div></section>
+
+      <section id="history" className="history-section"><div className="section-number">05</div><div><p className="index-label">WORK HISTORY</p><h2>A path from<br /><em>systems to intelligence.</em></h2></div><div className="history-line">{history.map(([year, company, role]) => <article key={company}><span>{year}</span><div><strong>{company}</strong><p>{role}</p></div></article>)}</div></section>
+
+      <section id="about" className="about-section"><div className="about-block"><p className="index-label">06 / ABOUT</p><h2>Technical depth,<br /><em>human clarity.</em></h2><p>I like the space between a model and the person who has to trust its output. My practice combines production engineering, analysis, visual communication, and careful explanation.</p><div className="about-meta"><span>EDUCATION</span><strong>M.Sc. Data Science and AI · Mundiapolis University · 2025</strong><span>LANGUAGES</span><strong>Arabic · Tamazight · French · English</strong></div></div></section>
+
+      <section id="contact" className="back-cover"><div className="back-number">07</div><div><p className="index-label">BACK COVER / CONTACT</p><h2>Search systems for<br /><em>difficult information.</em></h2><p>For applied AI, data science, analytics, and LLM powered products.</p><div className="back-links"><a className="acid-button" href="mailto:taghzoutimane@gmail.com?subject=Applied%20AI%20conversation">Email Imane <Mail size={16} /></a><a href="https://linkedin.com/in/imane-taghzout" target="_blank" rel="noreferrer">LinkedIn <Linkedin size={15} /></a><a href="https://github.com/imane-tag" target="_blank" rel="noreferrer">GitHub <Github size={15} /></a></div></div><div className="back-stamp"><b>印</b><br />IMANE<br />TAGHZOUT<br /><span>CASABLANCA / 2026</span></div></section>
+    </main>
+
+    <footer className="index-footer"><span>IMANE TAGHZOUT / DATA SCIENCE + AI ENGINEERING</span><span>Built with evidence</span><a href={cvUrl} target="_blank" rel="noreferrer">CV PDF <ArrowUpRight size={14} /></a></footer>
+  </div>;
+}
