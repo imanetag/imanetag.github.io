@@ -520,22 +520,20 @@ html:not(.dark) .site-footer > p { color: #777269; }
 }
 
 /* Chapter transitions: make each section read as a deliberate next chapter instead of one continuous canvas. */
-.page-section[data-chapter] { --chapter-strip: #ded6c8; --chapter-rule: #c9c4b8; --chapter-label: #777269; position: relative; border-top: 10px solid var(--chapter-strip); }
+.page-section[data-chapter] { --chapter-strip: #d8cfbf; --chapter-rule: #c9c4b8; --chapter-label: #777269; position: relative; border-top: 10px solid var(--chapter-strip); }
 .page-section[data-chapter]::before { content: attr(data-chapter); position: absolute; top: 1.35rem; left: clamp(1.25rem, 5vw, 5.5rem); z-index: 2; color: var(--chapter-label); font-family: var(--font-mono, ui-monospace, monospace); font-size: .56rem; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
 .page-section[data-chapter]::after { content: ""; position: absolute; top: 1.55rem; left: clamp(1.25rem, 5vw, 5.5rem); right: clamp(1.25rem, 5vw, 5.5rem); height: 1px; background: var(--chapter-rule); transform: translateY(1.35rem); }
 .page-section[data-chapter] > .section-index { position: relative; z-index: 3; padding-top: 2.25rem; }
 .page-section[data-chapter] > .section-index span:last-child { letter-spacing: .16em; }
 .dark .page-section[data-chapter] { --chapter-strip: #9fb4ff; --chapter-rule: rgba(244,240,231,.24); --chapter-label: #aaa59b; }
 /* Keep the case study marker integrated with its new evidence led opening. */
-.case-study-section[data-chapter] { --chapter-strip: #c7d3e8; --chapter-label: #3457c8; }
+.case-study-section[data-chapter] { --chapter-label: #3457c8; }
 .case-study-section[data-chapter]::before { color: var(--chapter-label); }
 .dark .case-study-section[data-chapter]::before { color: #9fb4ff; }
 /* Give adjacent chapters a visible material change while keeping the warm editorial palette coherent. */
 .statement-section[data-chapter] { padding-bottom: clamp(5rem, 10vw, 9rem); }
-.work-section[data-chapter], .experience-section[data-chapter], .about-section[data-chapter], .credentials-section[data-chapter] { --chapter-strip: #e5dfd2; }
-.capabilities-section[data-chapter] { --chapter-strip: #d8cfbf; }
-.field-notes-section[data-chapter] { --chapter-strip: #b65f49; --chapter-rule: rgba(244,240,231,.2); }
-.contact-section[data-chapter] { --chapter-strip: #f4d1c6; --chapter-rule: rgba(255,255,255,.38); --chapter-label: #dfe7ff; }
+.work-section[data-chapter], .experience-section[data-chapter], .about-section[data-chapter], .credentials-section[data-chapter], .capabilities-section[data-chapter], .field-notes-section[data-chapter], .contact-section[data-chapter] { --chapter-strip: #d8cfbf; --chapter-rule: #c9c4b8; }
+.contact-section[data-chapter] { --chapter-label: #dfe7ff; }
 .dark .work-section[data-chapter], .dark .experience-section[data-chapter], .dark .about-section[data-chapter], .dark .credentials-section[data-chapter], .dark .case-study-section[data-chapter], .dark .capabilities-section[data-chapter], .dark .field-notes-section[data-chapter], .dark .contact-section[data-chapter] { --chapter-strip: #9fb4ff; }
 @media (max-width: 680px) {
   .page-section[data-chapter]::before { top: .9rem; left: 1.25rem; font-size: .52rem; }
