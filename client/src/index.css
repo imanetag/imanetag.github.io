@@ -169,7 +169,7 @@ h1 em { margin-right: .16em; }
 
 .capabilities-section { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 6rem); padding-top: 8rem; padding-bottom: 7rem; background: #e9e4d8; }
 .capability-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
-.capability { border-top: 2px solid #c9c4b8; padding-top: 1.1rem; }
+.capability { border-top: 2px solid #d0c7b8; padding-top: 1.1rem; }
 .capability svg { color: var(--cobalt); margin-bottom: 1.7rem; }
 .capability p { margin-bottom: .45rem; font-family: 'Fraunces', serif; font-size: 1.2rem; }
 .capability span { color: #716c62; font-size: .68rem; line-height: 1.55; }
@@ -521,7 +521,7 @@ html:not(.dark) .site-footer > p { color: #777269; }
 }
 
 /* Chapter transitions: make each section read as a deliberate next chapter instead of one continuous canvas. */
-.page-section[data-chapter] { --chapter-strip: #d8cfbf; --chapter-rule: #c9c4b8; --chapter-label: #777269; position: relative; border-top: 10px solid var(--chapter-strip); }
+.page-section[data-chapter] { --chapter-strip: #e2dbcf; --chapter-rule: #d0c7b8; --chapter-label: #777269; position: relative; border-top: 10px solid var(--chapter-strip); }
 .page-section[data-chapter]::before { content: attr(data-chapter); position: absolute; top: 1.35rem; left: clamp(1.25rem, 5vw, 5.5rem); z-index: 2; color: var(--chapter-label); font-family: var(--font-mono, ui-monospace, monospace); font-size: .56rem; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
 .page-section[data-chapter]::after { content: ""; position: absolute; top: 1.55rem; left: clamp(1.25rem, 5vw, 5.5rem); right: clamp(1.25rem, 5vw, 5.5rem); height: 1px; background: var(--chapter-rule); transform: translateY(1.35rem); }
 .page-section[data-chapter] > .section-index { position: relative; z-index: 3; padding-top: 2.25rem; }
@@ -533,7 +533,7 @@ html:not(.dark) .site-footer > p { color: #777269; }
 .dark .case-study-section[data-chapter]::before { color: #9fb4ff; }
 /* Give adjacent chapters a visible material change while keeping the warm editorial palette coherent. */
 .statement-section[data-chapter] { padding-bottom: clamp(5rem, 10vw, 9rem); }
-.work-section[data-chapter], .experience-section[data-chapter], .about-section[data-chapter], .credentials-section[data-chapter], .capabilities-section[data-chapter], .field-notes-section[data-chapter], .contact-section[data-chapter] { --chapter-strip: #d8cfbf; --chapter-rule: #c9c4b8; }
+.work-section[data-chapter], .experience-section[data-chapter], .about-section[data-chapter], .credentials-section[data-chapter], .capabilities-section[data-chapter], .field-notes-section[data-chapter], .contact-section[data-chapter] { --chapter-strip: #e2dbcf; --chapter-rule: #d0c7b8; }
 .contact-section[data-chapter] { --chapter-label: #dfe7ff; }
 .dark .work-section[data-chapter], .dark .experience-section[data-chapter], .dark .about-section[data-chapter], .dark .credentials-section[data-chapter], .dark .case-study-section[data-chapter], .dark .capabilities-section[data-chapter], .dark .field-notes-section[data-chapter], .dark .contact-section[data-chapter] { --chapter-strip: #9fb4ff; }
 @media (max-width: 680px) {
