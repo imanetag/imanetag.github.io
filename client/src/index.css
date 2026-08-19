@@ -520,27 +520,23 @@ html:not(.dark) .site-footer > p { color: #777269; }
 }
 
 /* Chapter transitions: make each section read as a deliberate next chapter instead of one continuous canvas. */
-.page-section[data-chapter] { position: relative; }
-.page-section[data-chapter]::before { content: attr(data-chapter); position: absolute; top: 1.35rem; left: clamp(1.25rem, 5vw, 5.5rem); z-index: 2; color: #777269; font-family: var(--font-mono, ui-monospace, monospace); font-size: .56rem; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
-.page-section[data-chapter]::after { content: ""; position: absolute; top: 1.55rem; left: clamp(1.25rem, 5vw, 5.5rem); right: clamp(1.25rem, 5vw, 5.5rem); height: 1px; background: #c9c4b8; transform: translateY(1.35rem); }
+.page-section[data-chapter] { --chapter-strip: #ded6c8; --chapter-rule: #c9c4b8; --chapter-label: #777269; position: relative; border-top: 10px solid var(--chapter-strip); }
+.page-section[data-chapter]::before { content: attr(data-chapter); position: absolute; top: 1.35rem; left: clamp(1.25rem, 5vw, 5.5rem); z-index: 2; color: var(--chapter-label); font-family: var(--font-mono, ui-monospace, monospace); font-size: .56rem; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
+.page-section[data-chapter]::after { content: ""; position: absolute; top: 1.55rem; left: clamp(1.25rem, 5vw, 5.5rem); right: clamp(1.25rem, 5vw, 5.5rem); height: 1px; background: var(--chapter-rule); transform: translateY(1.35rem); }
 .page-section[data-chapter] > .section-index { position: relative; z-index: 3; padding-top: 2.25rem; }
 .page-section[data-chapter] > .section-index span:last-child { letter-spacing: .16em; }
-.dark .page-section[data-chapter]::before { color: #aaa59b; }
-.dark .page-section[data-chapter]::after { background: rgba(244,240,231,.24); }
+.dark .page-section[data-chapter] { --chapter-strip: #9fb4ff; --chapter-rule: rgba(244,240,231,.24); --chapter-label: #aaa59b; }
 /* Keep the case study marker integrated with its new evidence led opening. */
-.case-study-section[data-chapter]::before { color: #3457c8; }
+.case-study-section[data-chapter] { --chapter-strip: #c7d3e8; --chapter-label: #3457c8; }
+.case-study-section[data-chapter]::before { color: var(--chapter-label); }
 .dark .case-study-section[data-chapter]::before { color: #9fb4ff; }
 /* Give adjacent chapters a visible material change while keeping the warm editorial palette coherent. */
 .statement-section[data-chapter] { padding-bottom: clamp(5rem, 10vw, 9rem); }
-.work-section[data-chapter] { border-top: 10px solid #e5dfd2; }
-.case-study-section[data-chapter] { border-top: 10px solid #d5d0c4; }
-.experience-section[data-chapter], .about-section[data-chapter], .credentials-section[data-chapter] { border-top: 10px solid #e5dfd2; }
-.field-notes-section[data-chapter] { border-top: 10px solid #272923; }
-.contact-section[data-chapter] { border-top: 10px solid #3457c8; }
-.dark .work-section[data-chapter], .dark .experience-section[data-chapter], .dark .about-section[data-chapter], .dark .credentials-section[data-chapter] { border-top-color: #252823; }
-.dark .case-study-section[data-chapter] { border-top-color: #2d3545; }
-.dark .field-notes-section[data-chapter] { border-top-color: #9fb4ff; }
-.dark .contact-section[data-chapter] { border-top-color: #9fb4ff; }
+.work-section[data-chapter], .experience-section[data-chapter], .about-section[data-chapter], .credentials-section[data-chapter] { --chapter-strip: #e5dfd2; }
+.capabilities-section[data-chapter] { --chapter-strip: #d8cfbf; }
+.field-notes-section[data-chapter] { --chapter-strip: #b65f49; --chapter-rule: rgba(244,240,231,.2); }
+.contact-section[data-chapter] { --chapter-strip: #f4d1c6; --chapter-rule: rgba(255,255,255,.38); --chapter-label: #dfe7ff; }
+.dark .work-section[data-chapter], .dark .experience-section[data-chapter], .dark .about-section[data-chapter], .dark .credentials-section[data-chapter], .dark .case-study-section[data-chapter], .dark .capabilities-section[data-chapter], .dark .field-notes-section[data-chapter], .dark .contact-section[data-chapter] { --chapter-strip: #9fb4ff; }
 @media (max-width: 680px) {
   .page-section[data-chapter]::before { top: .9rem; left: 1.25rem; font-size: .52rem; }
   .page-section[data-chapter]::after { top: 1.05rem; left: 1.25rem; right: 1.25rem; transform: translateY(1.1rem); }
@@ -568,7 +564,7 @@ html:not(.dark) .site-footer > p { color: #777269; }
 }
 
 /* Selected Projects composition match: horizontal chapter marker first, vertical section index below it in the left rail. */
-.work-section[data-chapter]::before { display: block !important; content: attr(data-chapter); top: 1.35rem; left: 1.25rem; z-index: 2; color: #777269; font-family: var(--font-mono, ui-monospace, monospace); font-size: .56rem; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
+.work-section[data-chapter]::before { display: block !important; content: attr(data-chapter); top: 1.35rem; left: 1.25rem; z-index: 2; color: var(--chapter-label); font-family: var(--font-mono, ui-monospace, monospace); font-size: .56rem; letter-spacing: .12em; line-height: 1; text-transform: uppercase; }
 .work-section[data-chapter]::after { top: 1.55rem; left: 1.25rem; right: 1.25rem; transform: translateY(1.35rem); }
 .work-section[data-chapter] > .section-index { z-index: 3; padding-top: 2.25rem; }
 .dark .work-section[data-chapter]::before { color: #aaa59b; }

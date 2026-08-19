@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Imane Taghzout portfolio masthead</title>
+  <desc id="desc">A colorful editorial banner for a data science and AI engineering portfolio.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f2e8"/>
+      <stop offset="1" stop-color="#e5dfd2"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6d86ff"/>
+      <stop offset="1" stop-color="#3457c8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="140%">
+      <feDropShadow dx="12" dy="14" stdDeviation="0" flood-color="#171816" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#paper)"/>
+  <path d="M0 335H1200" stroke="#c9c4b8" stroke-width="2"/>
+  <path d="M0 82H1200" stroke="#c9c4b8" stroke-width="2"/>
+  <g opacity=".55" stroke="#6d86ff" stroke-width="1">
+    <path d="M680 82V335M760 82V335M840 82V335M920 82V335M1000 82V335M1080 82V335"/>
+    <path d="M640 135H1130M640 205H1130M640 275H1130"/>
+  </g>
+  <g transform="translate(70 62)">
+    <rect width="92" height="92" fill="#f4f0e7" stroke="#171816" stroke-width="3"/>
+    <rect x="14" y="14" width="16" height="64" fill="#3457c8"/>
+    <rect x="38" y="14" width="16" height="64" fill="#171816"/>
+    <path d="M66 14v64" stroke="#b65f49" stroke-width="8"/>
+    <text x="116" y="34" fill="#171816" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="5">IMANE</text>
+    <text x="116" y="63" fill="#3457c8" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="5">TAGHZOUT</text>
+  </g>
+  <g transform="translate(74 165)">
+    <text fill="#3457c8" font-family="Manrope, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="6">DATA SCIENTIST / AI ENGINEER</text>
+    <text y="74" fill="#171816" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700" letter-spacing="-3">AI systems that make</text>
+    <text y="148" fill="#171816" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700" letter-spacing="-3">information </text>
+    <text x="355" y="148" fill="#3457c8" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-style="italic" font-weight="700" letter-spacing="-3">easier to trust.</text>
+  </g>
+  <g transform="translate(675 125)" filter="url(#shadow)">
+    <rect x="0" y="0" width="390" height="230" fill="#f4f0e7" stroke="#171816" stroke-width="2"/>
+    <rect x="24" y="34" width="105" height="55" fill="url(#blue)"/>
+    <rect x="155" y="88" width="170" height="45" fill="#3457c8"/>
+    <rect x="72" y="152" width="185" height="42" fill="#171816"/>
+    <circle cx="86" cy="62" r="29" fill="#171816"/>
+    <circle cx="324" cy="64" r="23" fill="#b65f49"/>
+    <circle cx="300" cy="174" r="30" fill="#171816"/>
+    <path d="M98 62C158 20 224 64 302 64" fill="none" stroke="#171816" stroke-width="5" stroke-linecap="round"/>
+    <path d="M214 111C252 106 274 98 314 74" fill="none" stroke="#f4f0e7" stroke-width="3" stroke-linecap="round"/>
+    <path d="M255 174C202 200 148 187 94 174" fill="none" stroke="#b65f49" stroke-width="5" stroke-linecap="round"/>
+    <text x="24" y="24" fill="#3457c8" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="800" letter-spacing="4">RETRIEVE / VERIFY / PUBLISH</text>
+  </g>
+  <g transform="translate(74 365)" font-family="Manrope, Arial, sans-serif" font-size="15" font-weight="800" letter-spacing="4">
+    <text fill="#777269">CASABLANCA, MOROCCO</text>
+    <text x="282" fill="#b65f49">RAG</text>
+    <text x="350" fill="#3457c8">LLMS</text>
+    <text x="440" fill="#171816">ANALYTICS</text>
+    <text x="590" fill="#777269">OCR</text>
+  </g>
+</svg>
