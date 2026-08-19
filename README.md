@@ -6,7 +6,7 @@ Live site: https://imanetag.github.io/
 
 ## About
 
-This portfolio highlights applied AI, data science, analytics, RAG, OCR, and LLM product work across Generovo, Segula Technologies, Barid Al Maghrib, and earlier systems administration experience.
+This portfolio highlights applied AI, data science, analytics, RAG, OCR, and LLM product work across Generovo, Segula Technologies, Barid Al Maghrib, and earlier systems administration experience. The current design uses an editorial field-notes structure with project evidence, experience, capabilities, credentials, and contact sections.
 
 ## CV
 

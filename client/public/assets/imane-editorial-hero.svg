@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Editorial AI system diagram</title>
+  <desc id="desc">Abstract editorial diagram showing information signals, evaluation paths, and structured outputs.</desc>
+  <rect width="1200" height="900" fill="#d7dce6"/>
+  <rect x="64" y="64" width="1072" height="772" fill="#f4f0e7" opacity=".72"/>
+  <g fill="none" stroke="#2457d6" stroke-width="2" opacity=".35">
+    <path d="M120 200H1080M120 320H1080M120 440H1080M120 560H1080M120 680H1080"/>
+    <path d="M220 120V780M380 120V780M540 120V780M700 120V780M860 120V780M1020 120V780"/>
+  </g>
+  <g fill="#171816">
+    <circle cx="245" cy="280" r="54"/>
+    <circle cx="748" cy="226" r="38"/>
+    <circle cx="934" cy="612" r="50"/>
+  </g>
+  <g fill="#2457d6">
+    <rect x="327" y="242" width="238" height="76"/>
+    <rect x="618" y="420" width="312" height="90"/>
+    <rect x="214" y="612" width="255" height="70"/>
+  </g>
+  <g fill="#bd6047">
+    <rect x="630" y="178" width="55" height="55" transform="rotate(-8 657 205)"/>
+    <rect x="465" y="505" width="74" height="74" transform="rotate(12 502 542)"/>
+    <rect x="944" y="294" width="44" height="44" transform="rotate(18 966 316)"/>
+  </g>
+  <g fill="none" stroke="#171816" stroke-width="5">
+    <path d="M295 282C405 248 517 293 635 225"/>
+    <path d="M506 540C618 508 662 473 776 465"/>
+    <path d="M470 647C638 696 772 679 904 617"/>
+  </g>
+  <g font-family="Manrope, Arial, sans-serif" font-weight="800" letter-spacing="8" fill="#171816">
+    <text x="96" y="118" font-size="28">TRUST THE TRACE</text>
+    <text x="96" y="812" font-size="18" fill="#2457d6">CRAWL / RETRIEVE / VERIFY / PUBLISH</text>
+  </g>
+</svg>
