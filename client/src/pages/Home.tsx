@@ -23,11 +23,11 @@ import { useTheme } from "@/contexts/ThemeContext";
 import { useEffect, useState } from "react";
 
 const publicAsset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
-const heroImage = publicAsset("assets/imane-editorial-hero.svg");
-const geocaraImage = publicAsset("assets/imane-geocara-project.svg");
-const ragImage = publicAsset("assets/imane-rag-project.svg");
-const portraitImage = publicAsset("assets/imane-portrait.svg");
-const monogram = publicAsset("imane-monogram.png");
+const heroImage = publicAsset("assets/imane-editorial-hero.webp");
+const geocaraImage = publicAsset("assets/imane-geocara-project.webp");
+const ragImage = publicAsset("assets/imane-rag-project.webp");
+const portraitImage = publicAsset("assets/imane-portrait.png");
+const monogram = publicAsset("imane-monogram.webp");
 const cvUrl = publicAsset("Imane_Taghzout_CV_FR_EN.pdf");
 
 const projects = [
