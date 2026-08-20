@@ -1,4 +1,7 @@
-# Imane Taghzout Portfolio
+<div align="center">
+  <h1>AI Systems, Made Legible</h1>
+  <p><strong>Imane Taghzout</strong> · Data Scientist & AI Engineer · Retrieval, analytics, and production LLM systems</p>
+</div>
 
 <p align="center">
   <img src="assets/readme-header.svg" alt="Imane Taghzout portfolio masthead" width="920" />
