@@ -16,7 +16,7 @@ Retrieval, analytics, and production minded AI systems built around clarity, evi
 
 This repository contains the source for Imane Taghzout’s personal portfolio. It presents applied artificial intelligence, retrieval systems, analytics work, and production minded data science projects through evidence, context, measurable outcomes, and the decisions behind the work.
 
-The portfolio is intentionally designed as a field notebook rather than a generic project gallery. Each project is introduced through its setting, role, methods, tools, and result so that visitors can understand not only what was built, but why it mattered.
+The portfolio is intentionally designed as a field notebook rather than a generic project gallery. Each project is introduced through its setting, role, methods, tools, and result so visitors can understand not only what was built, but why it mattered.
 
 ## Selected work
 
@@ -24,11 +24,13 @@ The portfolio is intentionally designed as a field notebook rather than a generi
 <img src="assets/readme-project-strip.svg" alt="Editorial project visuals for GEOCARA, Enterprise RAG, and Document Intelligence" width="920" />
 </p>
 
-| Project | Context | Evidence |
-| --- | --- | --- |
-| **GEOCARA** | Generative Engine Optimization and content intelligence platform | Six GEO metrics evaluated across fifty page crawls |
-| **Enterprise RAG** | Multimodal retrieval for internal documentation | Research time reduced from five minutes to twenty seconds |
-| **Document Intelligence** | OCR and NLP workflow automation | Processing throughput improved by thirty percent |
+The individual project visuals are also included in this repository for reuse:
+
+| Project | Context | Evidence | Image |
+| --- | --- | --- | --- |
+| **GEOCARA** | Generative Engine Optimization and content intelligence platform | Six GEO metrics evaluated across fifty page crawls | [View image](assets/geocara-project.png) |
+| **Enterprise RAG** | Multimodal retrieval for internal documentation | Research time reduced from five minutes to twenty seconds | [View image](assets/enterprise-rag-project.png) |
+| **Document Intelligence** | OCR and NLP workflow automation | Processing throughput improved by thirty percent | [View image](assets/document-intelligence-project.png) |
 
 These projects represent different parts of the same working approach: make complex information easier to retrieve, verify, explain, and act on.
 
@@ -52,8 +54,6 @@ These projects represent different parts of the same working approach: make comp
   <sub>AI systems · retrieval · analytics · business intelligence · production tooling</sub>
 </p>
 
-The portfolio brings together the following areas:
-
 | Area | Tools and methods |
 | --- | --- |
 | **AI systems** | LLMs, RAG, prompt workflows, evaluation, and content intelligence |
@@ -66,7 +66,7 @@ The portfolio brings together the following areas:
 
 The portfolio uses a warm editorial system built around paper toned neutrals, cobalt blue, charcoal ink, and restrained terracotta accents. The visual language is intended to make technical work feel precise without becoming cold, and personal without becoming informal.
 
-The generated project visuals are deliberately text free. Exact project names, dates, roles, and metrics remain real HTML and Markdown content so they stay accessible, editable, searchable, and factually controlled.
+The main header and project strip preserve exact identity and project context. The additional PNG project visuals are artwork assets only, while project names, roles, dates, and metrics remain real Markdown or HTML text wherever they appear.
 
 ## Run locally
 
@@ -107,6 +107,14 @@ pnpm run build
 ## Repository structure
 
 ```
+assets/
+  readme-header.svg
+  readme-project-strip.svg
+  hero-systems-thinking.png
+  geocara-project.png
+  enterprise-rag-project.png
+  document-intelligence-project.png
+
 client/
   src/
     pages/        Page level portfolio sections
