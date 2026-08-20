@@ -14,7 +14,7 @@ Retrieval, analytics, and production minded AI systems built around clarity, evi
 
 ## Why this portfolio exists
 
-This repository contains the source for Imane Taghzout’s personal portfolio. It presents applied artificial intelligence, retrieval systems, analytics work, and production minded data science projects through evidence, context, measurable outcomes, and the decisions behind the work.
+This repository contains the source for My personal portfolio. It presents applied artificial intelligence, retrieval systems, analytics work, and production minded data science projects through evidence, context, measurable outcomes, and the decisions behind the work.
 
 The portfolio is intentionally designed as a field notebook rather than a generic project gallery. Each project is introduced through its setting, role, methods, tools, and result so visitors can understand not only what was built, but why it mattered.
 
