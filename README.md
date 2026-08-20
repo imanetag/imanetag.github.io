@@ -21,7 +21,11 @@ The portfolio is intentionally designed as a field notebook rather than a generi
 ## Selected work
 
 <p align="center">
-<img src="assets/readme-project-strip.svg" alt="Editorial project visuals for GEOCARA, Enterprise RAG, and Document Intelligence" width="920" />
+<img src="assets/hero-systems-thinking.png" alt="AI systems and retrieval workflow artwork for Imane Taghzout" width="680" />
+</p> <p align="center">
+  <img src="assets/geocara-project.png" alt="GEOCARA project visual" width="280" />
+  <img src="assets/enterprise-rag-project.png" alt="Enterprise RAG project visual" width="280" />
+  <img src="assets/document-intelligence-project.png" alt="Document Intelligence project visual" width="280" />
 </p>
 
 The individual project visuals are also included in this repository for reuse:
@@ -66,7 +70,7 @@ These projects represent different parts of the same working approach: make comp
 
 The portfolio uses a warm editorial system built around paper toned neutrals, cobalt blue, charcoal ink, and restrained terracotta accents. The visual language is intended to make technical work feel precise without becoming cold, and personal without becoming informal.
 
-The main header and project strip preserve exact identity and project context. The additional PNG project visuals are artwork assets only, while project names, roles, dates, and metrics remain real Markdown or HTML text wherever they appear.
+The main header preserves the exact identity text, while the uploaded PNG assets provide the hero and project visuals below it. The additional PNG project visuals are artwork assets only, while project names, roles, dates, and metrics remain real Markdown or HTML text wherever they appear.
 
 ## Run locally
 
