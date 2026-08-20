@@ -1,94 +1,130 @@
 <div align="center">
-  <h1>AI Systems, Made Legible</h1>
-  <p><strong>Imane Taghzout</strong> · Data Scientist & AI Engineer · Retrieval, analytics, and production LLM systems</p>
-</div>
 
-<p align="center">
-  <img src="assets/readme-header.svg" alt="Imane Taghzout portfolio masthead" width="920" />
+# AI Systems, Made Legible
+
+**Imane Taghzout** · Data Scientist and AI Engineer
+
+Retrieval, analytics, and production minded AI systems built around clarity, evidence, and useful decisions.
+
+[Live Portfolio](https://imanetag.github.io/) · [CV PDF](https://imanetag.github.io/Imane_Taghzout_CV_FR_EN.pdf) · [GitHub](https://github.com/imane-tag) · [LinkedIn](https://linkedin.com/in/imane-taghzout)
+
+</div> <p align="center">
+<img src="assets/readme-header.svg" alt="Editorial portfolio artwork for Imane Taghzout" width="920" />
 </p>
 
-<p align="center">
-  <a href="https://imanetag.github.io/">
-    <img alt="Live Portfolio" src="https://img.shields.io/badge/Live_Portfolio-3457C8?style=for-the-badge&logo=githubpages&logoColor=white">
-  </a>
-  <a href="https://imanetag.github.io/Imane_Taghzout_CV_FR_EN.pdf">
-    <img alt="CV PDF" src="https://img.shields.io/badge/CV_PDF-B65F49?style=for-the-badge&logo=adobeacrobatreader&logoColor=white">
-  </a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=taghzoutimane@gmail.com&su=Applied%20AI%20portfolio%20conversation">
-    <img alt="Email" src="https://img.shields.io/badge/Contact-171816?style=for-the-badge&logo=gmail&logoColor=white">
-  </a>
-</p>
+## Why this portfolio exists
 
-<h3 align="center">Data Scientist & AI Engineer building AI systems that make information easier to trust and act on.</h3>
+This repository contains the source for Imane Taghzout’s personal portfolio. It presents applied artificial intelligence, retrieval systems, analytics work, and production minded data science projects through evidence, context, measurable outcomes, and the decisions behind the work.
 
----
+The portfolio is intentionally designed as a field notebook rather than a generic project gallery. Each project is introduced through its setting, role, methods, tools, and result so that visitors can understand not only what was built, but why it mattered.
 
-## What This Is
-
-This is the source for my personal portfolio: a warm editorial website for presenting applied AI, retrieval systems, analytics work, and production-minded data science projects.
-
-The site is built to feel less like a template and more like a field notebook: evidence, project context, measurable impact, and the person behind the work.
-
-## Featured Work
+## Selected work
 
 <p align="center">
-  <img src="assets/readme-project-strip.svg" alt="Project signal cards for GEOCARA, Enterprise RAG, and Document Intelligence" width="920" />
+<img src="assets/readme-project-strip.svg" alt="Editorial project visuals for GEOCARA, Enterprise RAG, and Document Intelligence" width="920" />
 </p>
 
-| Project | Focus | Signal |
+| Project | Context | Evidence |
 | --- | --- | --- |
-| **GEOCARA** | Generative Engine Optimization platform | 6 GEO metrics across 50 page crawls |
-| **Enterprise RAG** | Multimodal retrieval for internal documentation | Research time from 5 min to 20 s |
-| **Document Intelligence** | OCR and NLP workflow automation | +30% processing throughput |
+| **GEOCARA** | Generative Engine Optimization and content intelligence platform | Six GEO metrics evaluated across fifty page crawls |
+| **Enterprise RAG** | Multimodal retrieval for internal documentation | Research time reduced from five minutes to twenty seconds |
+| **Document Intelligence** | OCR and NLP workflow automation | Processing throughput improved by thirty percent |
 
-## Portfolio Sections
+These projects represent different parts of the same working approach: make complex information easier to retrieve, verify, explain, and act on.
 
-| Section | What You Will Find |
+## What you will find in the portfolio
+
+| Chapter | Focus |
 | --- | --- |
-| **Selected Projects** | Case-style project summaries with roles, stack, and outcomes |
-| **GEOCARA Case Study** | Deeper breakdown of the audit-to-publication pipeline |
-| **Experience** | Applied AI, data engineering, and systems timeline |
-| **Capabilities** | LLMs, RAG, NLP, analytics, production tooling, and working style |
+| **Selected Projects** | Applied projects with roles, technologies, context, and outcomes |
+| **GEOCARA Case Study** | A deeper audit, enrichment, verification, and publication workflow |
+| **Experience** | Internship work across AI engineering, data engineering, analytics, and automation |
+| **Capabilities** | LLM systems, RAG, NLP, analytics, production tooling, and working methods |
+| **About** | Background, motivation, and the person behind the technical work |
+| **Field Notes** | Short principles about clarity, evidence, and responsible system building |
 | **Credentials** | Education, certifications, languages, and interests |
 
 ## Tech Palette
 
 <p align="center">
-  <img alt="React TypeScript Vite Tailwind Python Docker FastAPI Git GitHub logos" src="https://skillicons.dev/icons?i=react,ts,vite,tailwind,python,docker,fastapi,git,github&theme=light">
+<img alt="Python TypeScript React Vite Tailwind CSS Docker FastAPI Git GitHub PostgreSQL Power BI" src="https://skillicons.dev/icons?i=python,typescript,react,vite,tailwind,docker,fastapi,git,github,postgres,powerbi&theme=light" />
+</p> <p align="center">
+  <sub>AI systems · retrieval · analytics · business intelligence · production tooling</sub>
 </p>
 
-<p align="center">
-  <img alt="LLM Systems" src="https://img.shields.io/badge/LLM_Systems-3457C8?style=flat-square">
-  <img alt="RAG" src="https://img.shields.io/badge/RAG-171816?style=flat-square">
-  <img alt="OCR NLP" src="https://img.shields.io/badge/OCR_%2F_NLP-B65F49?style=flat-square">
-  <img alt="Analytics" src="https://img.shields.io/badge/Analytics-6D86FF?style=flat-square">
-  <img alt="Production AI" src="https://img.shields.io/badge/Production_AI-F4F0E7?style=flat-square&labelColor=171816">
-</p>
+The portfolio brings together the following areas:
 
-## Run Locally
+| Area | Tools and methods |
+| --- | --- |
+| **AI systems** | LLMs, RAG, prompt workflows, evaluation, and content intelligence |
+| **Data practice** | Python, SQL, statistics, forecasting, exploratory analysis, and KPI design |
+| **Business intelligence** | Power BI, SPSS, Excel, reporting, and decision support |
+| **Document systems** | OCR, NLP, extraction, verification, and structured publishing |
+| **Production tooling** | React, TypeScript, Vite, Tailwind CSS, Docker, FastAPI, Git, and GitHub |
+
+## Visual language
+
+The portfolio uses a warm editorial system built around paper toned neutrals, cobalt blue, charcoal ink, and restrained terracotta accents. The visual language is intended to make technical work feel precise without becoming cold, and personal without becoming informal.
+
+The generated project visuals are deliberately text free. Exact project names, dates, roles, and metrics remain real HTML and Markdown content so they stay accessible, editable, searchable, and factually controlled.
+
+## Run locally
+
+Install the project dependencies:
 
 ```bash
 pnpm install
+```
+
+Start the development server:
+
+```bash
 pnpm run dev
 ```
 
-Build for production:
+Run the project checks:
 
 ```bash
 pnpm run check
+```
+
+Build the production version:
+
+```bash
 pnpm run build
 ```
 
-## Links
+## Project links
 
-- Portfolio: https://imanetag.github.io/
-- CV PDF: https://imanetag.github.io/Imane_Taghzout_CV_FR_EN.pdf
-- GitHub: https://github.com/imane-tag
-- LinkedIn: https://linkedin.com/in/imane-taghzout
-- Email: taghzoutimane@gmail.com
+| Destination | Link |
+| --- | --- |
+| Portfolio | [imanetag.github.io](https://imanetag.github.io/) |
+| CV PDF | [Download the CV](https://imanetag.github.io/Imane_Taghzout_CV_FR_EN.pdf) |
+| GitHub | [github.com/imane-tag](https://github.com/imane-tag) |
+| LinkedIn | [linkedin.com/in/imane-taghzout](https://linkedin.com/in/imane-taghzout) |
+| Email | [taghzoutimane@gmail.com](mailto:taghzoutimane@gmail.com) |
 
----
+## Repository structure
 
-<p align="center">
-  Built with intent in Casablanca. Designed around clarity, trust, and useful systems.
-</p>
+```
+client/
+  src/
+    pages/        Page level portfolio sections
+    components/   Reusable interface components
+    contexts/     Theme and shared application context
+    hooks/        Reusable interaction hooks
+    index.css     Editorial design system and theme rules
+
+server/           Development compatibility server
+shared/           Shared project constants
+```
+
+## Closing note
+
+Built with intent in Casablanca. Designed around clarity, trust, and useful systems.
+
+<div align="center">
+
+**Data Scientist and AI Engineer · Applied AI · Analytics · Retrieval · Production Systems**
+
+</div>
