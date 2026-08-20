@@ -9,7 +9,7 @@ Retrieval, analytics, and production minded AI systems built around clarity, evi
 [Live Portfolio](https://imanetag.github.io/) · [CV PDF](https://imanetag.github.io/Imane_Taghzout_CV_FR_EN.pdf) · [GitHub](https://github.com/imane-tag) · [LinkedIn](https://linkedin.com/in/imane-taghzout)
 
 </div> <p align="center">
-<img src="assets/readme-header.svg" alt="Editorial portfolio artwork for Imane Taghzout" width="920" />
+<img src="assets/readme-header-clean.png" alt="Editorial portfolio artwork for Imane Taghzout" width="920" />
 </p>
 
 ## Why this portfolio exists
@@ -112,7 +112,7 @@ pnpm run build
 
 ```
 assets/
-  readme-header.svg
+  readme-header-clean.png
   readme-project-strip.svg
   hero-systems-thinking.png
   geocara-project.png
